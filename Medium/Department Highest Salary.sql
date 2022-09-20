@@ -8,5 +8,5 @@ join department on emp.departmentId = department.id and emp.salary =(select max(
 where employee.departmentId=emp.departmentId)
 
 /*
-In this solution I select rows of table resulted by joining employee table by department table and selecting the department name and employee name and employee salary then filter the results by the salary of the employee if the salary is the highest in his department
+In this solution I select rows of table resulted by joining employee table by department table and selecting the department name and employee name and employee salary then filter the results by the salary of the employee if the salary is the highest in his department by using subquery
 */
