@@ -24,6 +24,6 @@ left join
 on a.request_at=b.request_at
 
 /* The problem is requesting to filter the two tables to get all information of the unbanned users and then get all the unbanned users with cancelled status in the range between '2013-10-01' and '2013-10-03' , 
-so I made two CTEs, one to get the total number of unbanned users gouped by request date and the other to get the total number of unbanned users with cancelled status grouped by request date, 
+so I made two CTEs, one to get the total number of unbanned users grouped by request date and the other to get the total number of unbanned users with cancelled status grouped by request date, 
 finally I joined the output of the two CTEs to get the cancellation rate on each day by joining the two CTEs to get the total number of unbanned users with cancelled status on each day, then for each row of the join result I divided the number of canceled by the number of unbanned users 
 */
